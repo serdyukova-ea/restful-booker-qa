@@ -61,6 +61,7 @@ API вернул 200 OK и создал бронирование с bookingid.
 
 **Priority:** High  
 **Type:** Positive / Boundary
+**Endpoint:** `POST /booking`
 
 ### Предусловия
 - Restful Booker API доступен.
@@ -103,6 +104,7 @@ API вернул 200 OK и создал бронирование с bookingid.
 
 **Priority:** Medium  
 **Type:** Positive
+**Endpoint:** `POST /booking`
 
 ### Предусловия
 - Restful Booker API доступен.
@@ -143,6 +145,7 @@ API вернул 200 OK и создал бронирование с bookingid.
 
 **Priority:** Medium  
 **Type:** Negative / Validation
+**Endpoint:** `POST /booking`
 
 ### Предусловия
 
@@ -184,6 +187,11 @@ API вернул 200 OK и создал бронирование с bookingid. �
 
 **Priority:** Medium  
 **Type:** Negative / Validation
+**Endpoint:** `POST /booking`
+
+### Предусловия
+
+- Restful Booker API доступен.
 
 ### Тестовые данные
 ```json
@@ -216,22 +224,28 @@ API вернул 200 OK и создал бронирование с bookingid. �
 **Фактический результат:**
 AAPI вернул 200 OK и создал бронирование с bookingid. Переданное строковое значение "price" было преобразовано в null.
 
-## TC-CREATE-006 — Создание бронирования с датой checkout раньше даты checkin
+## TC-CREATE-006 — Создание бронирования с датой выезда раньше даты заезда
 
 **Priority:** High  
 **Type:** Negative / Business validation
+**Endpoint:** `POST /booking`
+
+### Предусловия
+
+- Restful Booker API доступен.
 
 ### Тестовые данные
 ```json
 {
-  "firstname": "Jim",
-  "lastname": "Brown",
-  "totalprice": 100,
+  "firstname": "Ольга",
+  "lastname": "Григорьева",
+  "totalprice": 14500,
   "depositpaid": true,
   "bookingdates": {
-    "checkin": "2026-09-10",
-    "checkout": "2026-09-01"
-  }
+    "checkin": "2026-09-21",
+    "checkout": "2026-09-10"
+  },
+  "additionalneeds": "Завтрак на шведском столе"
 }
 ```
 ### Шаги
@@ -244,3 +258,9 @@ AAPI вернул 200 OK и создал бронирование с bookingid. 
 1. API отклоняет бронирование с некорректным диапазоном дат.
 2. Бронирование не создаётся.
 3. Response содержит информацию об ошибке валидации.
+
+### Результат выполнения
+**Статус:** Failed
+
+**Фактический результат:**
+API вернул 200 OK и успешно создал бронирование. В response сохранён некорректный диапазон дат. Дата выезда (2026-09-10) раньше даты заезда (2026-09-21).
