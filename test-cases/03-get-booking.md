@@ -4,7 +4,9 @@
 
 **Priority:** High  
 **Type:** Positive  
-**Endpoint:** `GET /booking/{id}`
+**Method:** GET
+**Base URL:** https://restful-booker.herokuapp.com
+**Endpoint:** /booking/{id}
 
 ### Предусловия
 - Restful Booker API доступен.
