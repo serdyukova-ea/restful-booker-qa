@@ -1,7 +1,6 @@
 # Создание бронирования — Test Cases
 
-## Base URL:
-https://restful-booker.herokuapp.com/booking
+**Base URL:** https://restful-booker.herokuapp.com/booking
 
 ## TC-CREATE-001 — Создание бронирования с валидными данными
 
