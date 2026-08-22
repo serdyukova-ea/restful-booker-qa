@@ -1,12 +1,13 @@
 # Get Booking — Test Cases
 
-## TC-GET-001 — Получение существующего бронирования по ID
+## Base URL:
+https://restful-booker.herokuapp.com
+
+## TC-GET-001 — Получение созданного бронирования
 
 **Priority:** High  
-**Type:** Positive  
-**Method:** GET
-**Base URL:** https://restful-booker.herokuapp.com
-**Endpoint:** /booking/{id}
+**Type:** Positive 
+**Endpoint:** GET /booking/{id}
 
 ### Предусловия
 - Restful Booker API доступен.
