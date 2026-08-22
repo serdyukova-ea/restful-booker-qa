@@ -1,7 +1,6 @@
 # Get Booking — Test Cases
 
-## Base URL:
-https://restful-booker.herokuapp.com
+## Base URL: https://restful-booker.herokuapp.com
 
 ## TC-GET-001 — Получение созданного бронирования
 
