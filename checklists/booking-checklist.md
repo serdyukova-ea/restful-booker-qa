@@ -1,6 +1,6 @@
 # Booking API Checklist
 
-## Create Booking
+## Создание бронирования
 
 - [ ] Verify successful booking creation
 - [ ] Verify required fields
