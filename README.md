@@ -1,40 +1,44 @@
 # Restful Booker — QA Portfolio Project
 
-## About the project
+## О проекте
 
-This project demonstrates API testing skills using the Restful Booker API.
+Проект демонстрирует навыки тестирования REST API на примере публичного API **Restful Booker**.
 
-## Scope
+В рамках проекта выполнено функциональное и интеграционное тестирование API, разработаны тест-кейсы и чек-листы, подготовлены негативные сценарии и проверки валидации входных данных.
 
-The following functionality is covered:
+## Объём тестирования
 
-- Authentication
-- Booking creation
-- Booking retrieval
-- Booking list retrieval
-- Booking filtering
-- Full booking update
-- Partial booking update
-- Booking deletion
-- Positive and negative scenarios
-- Input validation
-- Integration testing
+В рамках проекта покрыта следующая функциональность:
 
-## Testing tools
+- Аутентификация
+- Создание бронирования
+- Получение бронирования по ID
+- Получение списка бронирований
+- Фильтрация бронирований
+- Полное обновление бронирования
+- Частичное обновление бронирования
+- Удаление бронирования
+- Позитивные и негативные сценарии
+- Валидация входных данных
+- Интеграционные сценарии
+
+## Инструменты
 
 - Postman
 - REST API
 - GitHub
 - Markdown
 
-## Project structure
+## Структура проекта
 
-- `test-cases/` — functional API test cases
-- `checklists/` — API testing checklist
-- `integration-testing/` — integration test scenarios
-- `bug-reports/` — discovered defects
-- `postman/` — Postman collections
+- `test-cases/` — функциональные тест-кейсы API
+- `checklists/` — чек-лист тестирования API
+- `integration-testing/` — сценарии интеграционного тестирования
+- `bug-reports/` — найденные дефекты
+- `postman/` — коллекции Postman
 
-## API under test
+## Тестируемый API
 
-Restful Booker API
+**Restful Booker API**
+
+Публичный API для практики тестирования веб-сервисов и REST API.
