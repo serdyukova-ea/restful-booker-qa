@@ -1,21 +1,7 @@
-# Create Booking — Test Cases
+# Создание бронирования — Test Cases
 
 ## Endpoint
 `POST /booking`
-
-## Test Scenarios
-
-### Positive scenarios
-- TC-CREATE-001
-- TC-CREATE-002
-- ...
-
-### Negative scenarios
-- TC-CREATE-...
-
-### Validation scenarios
-- TC-CREATE-...
-
 
 ## TC-CREATE-001 — Создание бронирования с валидными данными
 
