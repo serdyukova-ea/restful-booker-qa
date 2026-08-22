@@ -181,15 +181,16 @@ API вернул 200 OK и создал бронирование с bookingid.
 
 ### Тестовые данные
 ```json
-{
-  "firstname": "Jim",
-  "lastname": "Brown",
-  "totalprice": "one hundred",
+{{
+  "firstname": "Ольга",
+  "lastname": "Григорьева",
+  "totalprice": "price",
   "depositpaid": true,
   "bookingdates": {
-    "checkin": "2026-09-01",
+    "checkin": "2026-09-09",
     "checkout": "2026-09-10"
-  }
+  },
+  "additionalneeds": "Завтрак на шведском столе"
 }
 ```
 ### Шаги
@@ -203,6 +204,11 @@ API вернул 200 OK и создал бронирование с bookingid.
 2. Бронирование не создаётся.
 3. Response содержит информацию об ошибке валидации.
 
+### Результат выполнения
+**Статус:** Failed
+
+**Фактический результат:**
+AAPI вернул 200 OK и создал бронирование с bookingid. Переданное строковое значение "price" было преобразовано в null.
 
 ## TC-CREATE-006 — Создание бронирования с датой checkout раньше даты checkin
 
