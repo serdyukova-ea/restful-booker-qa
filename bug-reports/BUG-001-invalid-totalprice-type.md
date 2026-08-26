@@ -14,10 +14,10 @@ API принимает строковое значение в поле `totalpri
 
 ## Тестовые данные
 ```json
-{
+{{
   "firstname": "Ольга",
   "lastname": "Григорьева",
-  "totalprice": "one hundred",
+  "totalprice": "price",
   "depositpaid": true,
   "bookingdates": {
     "checkin": "2026-09-09",
