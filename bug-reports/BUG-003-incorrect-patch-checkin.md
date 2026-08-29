@@ -1,7 +1,7 @@
 # BUG-003 — Формируется некорректное значение checkout, при обновлении только checkin
 
 **Severity:** Значительный  
-**Priority:** Вымсокий  
+**Priority:** Высокий  
 **Status:** Открыт  
 **Method:** `PATCH`  
 **Endpoint:** `/booking/{id}`
