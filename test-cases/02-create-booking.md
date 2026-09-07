@@ -238,7 +238,7 @@ API вернул 200 OK и создал бронирование с bookingid. �
 
 ### Тестовые данные
 ```json
-{{
+{
   "firstname": "Ольга",
   "lastname": "Григорьева",
   "totalprice": "price",
