@@ -144,7 +144,7 @@ API вернул `400 Bad Request`.
 **Status:** Failed
 
 **Фактический результат:**
-API вернул `405 Method Not Allowed`.
+API вернул `400 Bad Request`.
 Выполнение запроса GET `/booking/{id}` с указанным `bookingid` отправляет статус `404 Not Found`.
 
 ## TC-FULL_UPD-005 — Обновление бронирования с невалидными данными
